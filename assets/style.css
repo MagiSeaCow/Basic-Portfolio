@@ -49,6 +49,11 @@ table {
 
 /* My CSS Starts */
 
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
 body{
 	width: 960px;
 	background: #ffffff;
@@ -56,14 +61,41 @@ body{
 
 header {
     display: block;
-    background: #ffffff;
+	background: #ffffff;
+	border-style: solid;
+	border-bottom: 5px;
+	border-bottom-color: #cccccc;
     height: 50px;
 }
 
+section {
+		max-width: 800px;
+		margin: 0 auto;
+}
+
+.outside {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
 .myName {
-    display: block;
+	display: block;
+	float: left;
 	background: #4aaaa5;
 	text-align: center;
     height: 50px;
     width: 100px;
+}
+
+.navi {
+	display: inline-flex;
+	float: right;
+	background: #4aaaa5;
+	text-align: center;
+    height: 50px;
+    width: 200px;
+}
+
+.navi div {
+	margin-left: 5px;
 }
